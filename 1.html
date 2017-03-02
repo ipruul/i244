@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Esimene</title>
+    <style>
+        #a{
+            color: blue;
+        }
+        #b{
+            color: darkblue;
+            cursor: crosshair;
+            text-align: center;
+        }
+        #c:hover{
+            color: hotpink;
+            font-size: xx-large;
+        }
+        #d:hover{
+            background-color: hotpink;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
 
 <p>Algus</p>
-<h1>This is the first heading of the fist lesson</h1>
+<h1>This is the first heading of the first lesson</h1>
 <h2 id="top">Top of page!</h2>
 2
 
@@ -15,10 +35,10 @@
 <br/>
 
 
-<a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+<a href="javascript:alert('Hello World!');" id="c">Execute JavaScript</a>
 
 <p>
-    <img src="smiley.gif" alt="" />
+    <img src="smiley.gif" id="d" />
 </p>
 
 <p>
@@ -29,7 +49,7 @@
 
 <h1>Hello</h1> kuni <h6>hello</h6>
 <b>b</b>, <u>u</u>, <em>em</em>
-<ul>
+<ul id="a">
     <li>1</li>
     <li>1</li>
     <li>1</li>
@@ -46,7 +66,7 @@
 
 
 </ul>
-<ol>
+<ol id="b">
     <li>1</li>
     <li>1</li>
     <li>1</li>
