@@ -19,6 +19,8 @@
     width: 150px;
     height: 150px;
     position: fixed;
+    border-radius: 50%;
+    position: absolute;
 
 }
 
@@ -28,6 +30,8 @@
     width: 100px;
     height: 100px;
     position: fixed;
+    border-radius: 50%;
+    position: absolute;
 
 }
 #ddd {
@@ -36,6 +40,8 @@
     width: 50px;
     height: 50px;
     position: fixed;
+    border-radius: 50%;
+    position: absolute;
 
 }
 #eee {
@@ -43,6 +49,8 @@
     width: 25px;
     height: 25px;
     position: fixed;
+    border-radius: 50%;
+    position: absolute;
 
 }
 
@@ -51,4 +59,6 @@
     width: 5px;
     height: 5px;
     position: fixed;
+    border-radius: 50%;
+    position: absolute;
 }
