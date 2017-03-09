@@ -1,53 +1,54 @@
+#sty{
+    background-color: aquamarine;
+}
 
 
-#aa{
+
+#aaa{
     background-color: darkcyan;
     width: 200px;
     height: 200px;
-    border-radius: 100px;
-    float: right;
-    margin: 100px;
+    position: fixed;
+    border-radius: 50%;
+    position: absolute;
 
 }
 
-#bb{
+#bbb{
     background-color: aquamarine;
     width: 150px;
     height: 150px;
-    border-radius: 75px;
-    float: right;
-    margin: 25px;
+    position: fixed;
 
 }
 
-#cc {
+#ccc {
 
     background-color: silver;
     width: 100px;
     height: 100px;
-    border-radius: 50px;
-    float: right;
-    margin: 25px;
+    position: fixed;
 
 }
-#dd {
+#ddd {
 
     background-color: black;
     width: 50px;
     height: 50px;
-    border-radius: 25px;
-    float: right;
-
-    margin: 25px;
+    position: fixed;
 
 }
-#ee{
+#eee {
     background-color: white;
     width: 25px;
     height: 25px;
-    border-radius: 25px;
-    float: right;
+    position: fixed;
 
-    margin: 12px;
+}
 
+#fff{
+    background-color: grey;
+    width: 5px;
+    height: 5px;
+    position: fixed;
 }
