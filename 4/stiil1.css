@@ -4,8 +4,17 @@
 
 
 
+
+
+div:nth-child(1){
+
+    background-color: red;
+}
+
+
+
+
 #aaa{
-    background-color: darkcyan;
     width: 200px;
     height: 200px;
     position: fixed;
@@ -15,7 +24,6 @@
 }
 
 #bbb{
-    background-color: aquamarine;
     width: 150px;
     height: 150px;
     position: fixed;
@@ -26,7 +34,6 @@
 
 #ccc {
 
-    background-color: silver;
     width: 100px;
     height: 100px;
     position: fixed;
@@ -36,7 +43,6 @@
 }
 #ddd {
 
-    background-color: black;
     width: 50px;
     height: 50px;
     position: fixed;
@@ -45,7 +51,6 @@
 
 }
 #eee {
-    background-color: white;
     width: 25px;
     height: 25px;
     position: fixed;
@@ -55,7 +60,6 @@
 }
 
 #fff{
-    background-color: grey;
     width: 5px;
     height: 5px;
     position: fixed;
