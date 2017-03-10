@@ -1,14 +1,12 @@
-#sty{
-    background-color: aquamarine;
-}
 
-
-
-
-
-div:nth-child(1){
+.r:nth-child(odd){
 
     background-color: red;
+}
+
+.r:nth-child(even){
+
+    background-color: white;
 }
 
 
@@ -19,14 +17,12 @@ div:nth-child(1){
     height: 200px;
     position: fixed;
     border-radius: 50%;
-    position: absolute;
 
 }
 
 #bbb{
-    width: 150px;
-    height: 150px;
-    position: fixed;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     position: absolute;
 
@@ -34,35 +30,33 @@ div:nth-child(1){
 
 #ccc {
 
-    width: 100px;
-    height: 100px;
-    position: fixed;
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
     position: absolute;
 
 }
 #ddd {
 
-    width: 50px;
-    height: 50px;
-    position: fixed;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     position: absolute;
 
+
 }
 #eee {
-    width: 25px;
-    height: 25px;
-    position: fixed;
+    width: 25%;
+    height: 25%;
     border-radius: 50%;
     position: absolute;
 
 }
 
 #fff{
-    width: 5px;
-    height: 5px;
-    position: fixed;
+    width: 15%;
+    height: 15%;
     border-radius: 50%;
     position: absolute;
+
 }
