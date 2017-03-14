@@ -1,0 +1,100 @@
+
+<html>
+<body onload="myFunction()">
+
+<h1>Hello World!</h1>
+
+<script>
+    function myFunction() {
+        alert("Page is loaded");
+    }
+</script>
+
+
+<h2 onclick="this.innerHTML='Oops'"> Click me </h2>
+
+<script>
+    function changeText(id) {
+        id.innerHTML="oops2"
+
+    }
+</script>
+
+
+<p onclick="this.style.color='red'">peale klikkides muutub punaseks</p>
+<p onclick="this.style.color='green'">aas</p>
+
+
+<p id = "arvuta"></p>
+<script>
+    var a = 10;
+    var b = 20;
+    var x = a + b;
+    document.getElementById("arvuta").innerHTML = x;
+</script>
+
+
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+<script>
+    document.getElementById("myBtn").addEventListener("click", displayDate);
+
+    function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+</script>
+
+<p>a</p>
+
+<p id="demo"></p>
+
+
+<script>
+    var car = "Fiat";
+    document.getElementById("demo").innerHTML = car;
+</script>
+
+<script>
+
+    window.onclick = myFunction;
+
+    function myFunction() {
+        document.getElementsByTagName("aaa")[0].style.backgroundColor = "yellow";
+    }
+</script>
+
+
+<p id="demo2" onclick="uus();">Minu esimene javaScript</p>
+
+<script>
+    function uus(){
+        var demo2 = document.getElementById("demo2");
+        demo2.innerHTML += " <b>Jee</b>";
+    }
+</script>
+
+
+<p id="demo3" onclick="uus3();">Minu esimene javaScript</p>
+
+<script>
+    function uus3(){
+        var demo3 = document.getElementById("demo3");
+        demo3.innerHTML += " <b>Jee3</b>";
+    }
+</script>
+
+
+
+<p id="aaa" onclick="uus4();">Minu esimene javaScript</p>
+
+<script>
+    function uus4(){
+        var aaa = document.getElementById("aaa");
+        aaa.innerHTML += " <b>Jee4</b>";
+    }
+</script>
+
+</body>
+</html>
