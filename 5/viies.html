@@ -30,10 +30,12 @@
 <script>
     function uus4(){
         var aaa = document.getElementById("aaa");
-        aaa.innerHTML += " <b>Jee4</b>";
+        var x = Math.random()*800+'px';
+        var y = Math.random()*600+ 'px';
         alert("test");
         aaa.style.background='#000000';
-        aaa.style.left = '-100px';
+        aaa.style.left = y;
+        aaa.style.top = x;
 
     }
 </script>
