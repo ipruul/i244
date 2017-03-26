@@ -10,8 +10,16 @@
 	<script type="text/javascript">
 	$(document).ready(function () {
 	alert('tesst')
-		console.log($("#esimene"))
-        console.log($(".mingi"))
+		console.log($("#esimene"));
+        console.log($(".mingi"));
+        $("#esimene").css("color", "green");
+        console.log($("#esimene").css("color"));
+        $(".mingi").css({
+            "color" : "red",
+			"font-weight": "bold",
+			"font-size" : "20px"
+		});
+
 
     }) ;
 
