@@ -15,7 +15,7 @@ echo $muutuja2;
 function loenda_lambaid($n){
     $l = "lammas";
     for($i=1; $i<$n; $i=$i+1) {
-        echo "$i.$l\";
+        echo "$i.$l <br/>\n";
     }
 }
 loenda_lambaid(10);
