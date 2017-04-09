@@ -19,4 +19,6 @@ function loenda_lambaid($n){
     }
 }
 loenda_lambaid(10);
+
+
 ?>
