@@ -1,4 +1,8 @@
 <?php
+
+
+
+
 $text_bg="#fff";
 if (isset($_POST['bg']))
     $text_bg = htmlspecialchars($_POST['bg']);
@@ -21,6 +25,9 @@ $border=$border_color." ".$border_style." ".$border_width;
 $border_radius =10;
 if (isset($_POST['br']) )
     $border_radius = htmlspecialchars($_POST['br']);
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -83,6 +90,8 @@ if (isset($_POST['br']) )
         </fieldset>
         <input type="submit" value="esita" />
     </form>
+
+
 
 </body>
 </html>
