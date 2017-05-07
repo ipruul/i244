@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<?php echo "Hello";
+echo "<br>";
+echo "All rows from table loomaaed";
+echo  "<br>";
+
+global $connection;
+$host="localhost";
+$user="test";
+$pass="t3st3r123";
+$db="test";
+$connection = mysqli_connect($host, $user, $pass, $db) or die("ei saa ühendust mootoriga- ".mysqli_error());
+mysqli_query($connection, "SET CHARACTER SET UTF8") or die("Ei saanud baasi utf-8-sse - ".mysqli_error($connection));
+
+$sql = "select nimi, puur from 10131684_loomaaed";
+$result = $connection->query($sql);
+if ($result ->num_rows > 0) {
+while ($row = mysqli_fetch_assoc($result)){
+echo " Nimi: ".$row["nimi"]." Puur: ".$row["puur"]."<br>";
+}
+
+} else {
+echo " 0 vastust";
+}
+echo  "<br>";
+
+$sql = "select * from 10131684_loomaaed";
+$result = $connection->query($sql);
+if ($result ->num_rows > 0) {
+while ($row = mysqli_fetch_assoc($result)){
+echo "id:".$row["id"]. " Nimi: ".$row["nimi"]." Vanus: ".$row["vanus"]." Pilt: ".$row["liik"]." Puur: ".$row["puur"]."<br>";
+}
+
+} else {
+echo " 0 vastust";
+}
+
+
+echo  "<br>";
+
+$sql = "select * from 10131684_loomaaed";
+$result = $connection->query($sql);
+if ($result ->num_rows > 0) {
+while ($row = mysqli_fetch_assoc($result)){
+?>
+<img src="http://enos.itcollege.ee/~ipruul/i244/<?php echo $row['liik'];?>" />
+<?php
+
+}
+
+} else {
+echo " 0 vastust";
+}
+?>
+</body>
+</html>
