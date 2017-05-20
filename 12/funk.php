@@ -27,7 +27,7 @@ function kuva_puurid(){
 	// siia on vaja funktsionaalsust
 
 	global $connection;
-	$p= mysqli_query($connection, "select distinct(puur) as puur from loomaaed order by puur asc");
+	$p= mysqli_query($connection, "select distinct(puur) as puur from 10131684_loomaaed order by puur asc");
 	$puurid=array();
 	while ($r=mysqli_fetch_assoc($p)){
 		$l=mysqli_query($connection, "SELECT * FROM loomaaed WHERE  puur=".mysqli_real_escape_string($connection, $r['puur']));
