@@ -1,5 +1,5 @@
 <?php
-require_once('funk.php');
+require_once('funk1.php');
 session_start();
 connect_db();
 
