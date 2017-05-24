@@ -30,4 +30,4 @@ var_dump($_SESSION);
 echo '<br>';
 echo '<br>';
 
-require_once('q.php');
+require_once('l.php');
