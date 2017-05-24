@@ -11,10 +11,10 @@ if(!isset($_SESSION['username'])) {
 } else
 
 global $connection;
-$host="localhost";
-$user="ipruul";
-$pass="itc_pass2";
-$db="ipruul";
+$host="";
+$user="";
+$pass="";
+$db="";
 $connection = mysqli_connect($host, $user, $pass, $db) or die("ei saa ühendust mootoriga- ".mysqli_error());
 mysqli_query($connection, "SET CHARACTER SET UTF8") or die("Ei saanud baasi utf-8-sse - ".mysqli_error($con));
 
