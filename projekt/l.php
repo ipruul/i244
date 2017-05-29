@@ -15,28 +15,36 @@ $host="";
 $user="";
 $pass="";
 $db="";
-$connection = mysqli_connect($host, $user, $pass, $db) or die("ei saa ühendust mootoriga- ".mysqli_error());
+$connection = mysqli_connect($host, $user, $pass, $db) or die("ei saa ï¿½hendust mootoriga- ".mysqli_error());
 mysqli_query($connection, "SET CHARACTER SET UTF8") or die("Ei saanud baasi utf-8-sse - ".mysqli_error($con));
 
-$sql = "select nimi, puur from loomaaed";
+
+
+$sql = "select pilt_id, pilt from pilt";
 $result = $connection->query($sql);
 if ($result ->num_rows > 0) {
     while ($row = mysqli_fetch_assoc($result)){
-        echo " Nimi: ".$row["nimi"]." Puur: ".$row["puur"]."<br>";
+        echo " Pilt: ".$row["pilt_id"]." Pilt: ".$row["pilt"]."<br>";
     }
 
 } else {
     echo " 0 vastust";
 }
+
+
 echo  "<br>";
 
-$sql = "select * from loomaaed";
+$sql = "select * from pilt";
 $result = $connection->query($sql);
 if ($result ->num_rows > 0) {
     while ($row = mysqli_fetch_assoc($result)){
-        echo "id:".$row["id"]. " Nimi: ".$row["nimi"]." Vanus: ".$row["vanus"]." Pilt: ".$row["liik"]." Puur: ".$row["puur"]."<br>";
+        ?>
+        <img src="http://199.175.49.172/projekt/<?php echo $row['pilt'];?>" />
+        <?php
+
     }
 
 } else {
     echo " 0 vastust";
 }
+?>
