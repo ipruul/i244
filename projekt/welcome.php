@@ -19,12 +19,7 @@ if(!isset($_SESSION['username'])) {
 } else {
     echo 'Welcome ' . $_SESSION['username'];
 }
-echo '<br>';
-echo  'Welcome '.$_SESSION['username'] ;
 
-echo '<br>';
-echo 'aa '.$_SESSION['user_id'];
-echo '<br>';
 
 var_dump($_SESSION);
 echo '<br>';
