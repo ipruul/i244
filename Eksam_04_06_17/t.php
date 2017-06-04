@@ -1,3 +1,5 @@
 <?php
-echo 'Hello ' . htmlspecialchars($_POST["Nimi"]) .;
+echo 'Nimi: ' . htmlspecialchars($_POST["Nimi"]) . '';
+echo ' Kommentaar ' . htmlspecialchars($_POST["Kommentaar"]) . '';
+
 ?>
