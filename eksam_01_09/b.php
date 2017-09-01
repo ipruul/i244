@@ -1,7 +1,7 @@
 <?php
 
-
-echo $Tekst = $_POST["tekst"];
+echo "Hello ".$_COOKIE["TestCookie"]." <br>";
+echo $tekst = $_POST["tekst"];
 
 
 echo "<br>";
