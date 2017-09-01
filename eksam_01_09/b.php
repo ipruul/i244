@@ -1,7 +1,7 @@
 <?php
 
 
-echo $tekst = $_POST["tekst"];
+echo $Tekst = $_POST["tekst"];
 
 
 echo "<br>";
